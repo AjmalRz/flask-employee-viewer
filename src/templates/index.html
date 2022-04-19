@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+		<form action="/details" method="POST">
+			<img src="https://res.cloudinary.com/dejzo3x6l/image/upload/v1462601844/login%20page%20design/3.png" alt="Profile-pic">
+			<div class="input_box">
+				<input type="number" name="empid" placeholder="Enter the Employee ID">
+			</div>
+			
+			<input type="submit" name="submit" value="Check Details" class="submit_btn">
+
+		</form>
+	</div>
+</body>
+</html>
